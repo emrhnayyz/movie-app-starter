@@ -31,3 +31,10 @@ const MovieContextProvider = ({ children }) => {
 };
 
 export default MovieContextProvider;
+
+
+// Bu sayfa, TMDB API'sini kullanarak film verilerini almak ve bu verilere erişimi sağlamak için bir film bağlamı sağlar.
+
+// İşlevleri şunlardır:
+
+// getMovies: API tarafından sağlanan URL'ye bir HTTP GET isteği yapar ve film verilerini alır. Veriler res.data.results üzerinden ayarlanır ve setMovie işlevi kullanılarak film durumu güncellenir. Hata durumunda hataları konsola yazdırır. İstek tamamlandığında setLoading(false) işlevi kullanılarak yükleme durumu güncellenir.

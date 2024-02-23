@@ -128,3 +128,15 @@ const AuthContextProvider = ({ children }) => {
 };
 
 export default AuthContextProvider;
+
+
+// Bu sayfa, Firebase Authentication işlevselliğini React uygulamasında kullanmak için bir kimlik doğrulama bağlamı sağlar.
+
+// İşlevleri şunlardır:
+
+// createUser: E-posta, şifre ve kullanıcı adı gibi bilgilerle yeni bir kullanıcı oluşturur. Firebase createUserWithEmailAndPassword yöntemini kullanarak kullanıcıyı kaydeder ve ardından updateProfile yöntemini kullanarak kullanıcının profilini günceller. Hata durumunda hata bildirimini gösterir.
+// signIn: Mevcut bir kullanıcıyla e-posta ve şifreyle giriş yapar. Firebase signInWithEmailAndPassword yöntemini kullanır. Hata durumunda hata bildirimini gösterir.
+// logOut: Kullanıcıyı çıkış yapar. Firebase signOut yöntemini kullanır.
+// userObserver: Kullanıcının oturum durumunu izler ve oturum açan kullanıcı değiştiğinde bu bilgiyi günceller. Firebase onAuthStateChanged yöntemini kullanır.
+// signUpProvider: Google hesabıyla giriş yapmayı sağlar. Firebase GoogleAuthProvider ve signInWithPopup yöntemlerini kullanır.
+// forgotPassword: Kullanıcının şifresini sıfırlamak için bir e-posta gönderir. Firebase sendPasswordResetEmail yöntemini kullanır.
